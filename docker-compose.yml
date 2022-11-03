@@ -32,7 +32,8 @@ services:
       - JAEGER_AGENT_HOST=jaeger
       - STOREFRONT_URL=http://localhost:3000/
       - DASHBOARD_URL=http://localhost:9000/
-      - ALLOWED_HOSTS=localhost,api
+      - ALLOWED_HOSTS=localhost,api,*
+      - CORS_ALLOW_ALL_ORIGIN=true
 
   react-storefront:
     build:
